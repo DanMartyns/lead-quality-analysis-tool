@@ -1,0 +1,6 @@
+services:
+  lead_quality_analysis:
+    build: .
+    environment:
+      - LEADS_PREFIX=source/leads
+      - REPORTS_PREFIX=source/contractor_reports

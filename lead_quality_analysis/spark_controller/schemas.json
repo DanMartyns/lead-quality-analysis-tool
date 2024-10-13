@@ -1,0 +1,29 @@
+{
+    "input_schemas": [
+        {
+            "name": "leads",
+            "entries": [
+                {"name": "lead_UUID", "new_name": "lead_uuid", "type": "string"},
+                {"name": "phone_hash", "type": "string"},
+                {"name": "email_hash", "type": "string"}
+            ]
+        },
+        {
+            "name": "reports",
+            "entries": [
+                {"name": "ENTRYDATE", "new_name": "entry_date", "type": "date", "format": "mm/dd/yyy"},
+                {"name": "LEADNUMBER", "new_name": "lead_number", "type": "integer"},
+                {"name": "phone_hash", "type": "string"},
+                {"name": "email_hash", "type": "string"},
+                {"name": "STATE", "type": "string", "format": "[a-zA-Z]{2}"},
+                {"name": "ZIP", "type": "integer", "format": "[0-9]{5}"},
+                {"name": "Appt Date", "type": "timestamp", "format": "MM/dd/yyyy h:mma"},
+                {"name": "Demo", "type": "boolean"},
+                {"name": "Set", "type": "boolean"},
+                {"name": "Dispo", "type": "string"},
+                {"name": "Job Status", "type": "string"},
+                {"name": ["CITY", "CityName"] , "new_name": "city_name", "type": "string"}
+            ]
+        }
+    ]
+}
